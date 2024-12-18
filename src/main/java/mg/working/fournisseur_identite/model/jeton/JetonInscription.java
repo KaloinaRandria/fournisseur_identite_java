@@ -36,7 +36,6 @@ public class JetonInscription {
     String nom;
     LocalDate dateNaissance;
     @ManyToOne @JoinColumn(name = "id_jeton" , referencedColumnName = "id_jeton")
-    @Column(unique = true)
     Jeton jeton;
 
      // Constructeur personnalisé
